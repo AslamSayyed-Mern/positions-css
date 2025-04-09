@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: rgb(236, 167, 38);
+        }
+        .header{
+           
+            text-align: center;
+            height: 40px;
+            position: sticky;
+            top: 0px;
+           
+        }
+        .header h3{
+           
+            color: orange;
+            padding: 20px;
+            background-color: #000;
+        }
+        .container {
+            margin-top: 30px;
+        }
+
+        div>p {
+            font-weight: 900;
+            font-size: large;
+            padding: 10px;
+            border-bottom: 2px solid black;
+        }
+
+        .dialogue-box {
+            text-align: center;
+            position: absolute;
+            visibility: hidden;
+            height: 230px;
+            width: 150px;
+            background-color:rgb(236, 167, 38);
+          
+        }
+
+        .dialogue-box-2 {
+            text-align: center;
+            position: absolute;
+            visibility: hidden;
+            height: 250px;
+            width: 150px;
+            background-color: rgb(236, 167, 38);
+          
+        }
+
+        .dialogue-box-3 {
+            text-align: center;
+            position: absolute;
+            visibility: hidden;
+            height: 270px;
+            width: 150px;
+            background-color: rgb(236, 167, 38);
+            
+        }
+
+        img{
+            width: 100%;
+            height: 100px;
+        }
+      
+
+        .para1:hover+.dialogue-box {
+            visibility: visible;
+            top: 80px;
+            left: 120px;
+            z-index: 1;
+          
+        }
+
+        .para2:hover+.dialogue-box-2 {
+            visibility: visible;
+            top:130px;
+            left: 120px;
+            z-index: 1;
+        }
+
+        .para3:hover+.dialogue-box-3 {
+            visibility: visible;
+            top: 170px;
+            left: 120px;
+            z-index: 1;
+        }
+        .content{
+            margin: 20px;
+        }
+        ol li{
+           
+            font-weight: 900;
+            font-size: large;
+        }
+        .footer{
+                 
+            text-align: center;
+            height: 40px;
+            position: sticky;
+            bottom: 0px;
+           
+           
+        }
+        .footer p{    
+            color: orange;
+            padding: 20px;
+            background-color: #000;
+           
+
+        }
+
+  
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h3>Positions in CSS</h3>
+    </div>
+
+    <div class="container">
+        
+        <p class="para1">HTML</p>
+
+
+        <div class="dialogue-box">
+            <img src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-html/sta-je-html.jpg"
+                alt="img">
+            <span>
+                <p>HTML, or HyperText Markup Language, is the standard markup language for creating web pages, defining
+                    the structure and content of web content </p>
+            </span>
+
+        </div>
+        <div class="container-2">
+            <p class="para2">CSS</p>
+
+
+            <div class="dialogue-box-2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSubsfvX1GCHF8amyfEQxTz7AECFDY-oGMVTg&s"
+                    alt="img">
+                <span>
+                    <p>CSS stands for Cascading Style Sheets. It's a language used to style and layout web pages 
+                        basically, it controls how HTML elements look on the screen</p>
+                </span>
+            </div>
+
+            <div class="container-3">
+                <p class="para3">Python</p>
+
+
+                <div class="dialogue-box-3">
+                    <img src="https://i0.wp.com/junilearning.com/wp-content/uploads/2020/06/python-programming-language.webp?fit=1920%2C1920&ssl=1"
+                        alt="img">
+                    <span>
+                        <p>Python is a high-level, interpreted programming language known for its simplicity,
+                            readability, and versatility. It's great for both beginners and professionals</p>
+                    </span>
+                </div>
+            </div>
+            
+        <div class="content">
+            <ol>
+                <li>HTML </li>
+                <p>HTML stands for HyperText Markup Language and is used to structure content on the web.
+                    It uses tags like h1 for headings, p for paragraphs, and img for images.
+                    The basic layout of an HTML page includes html, head, and body sections.
+                    HTML is responsible for what content appears on a page, not how it looks.
+                    To style a webpage, we use CSS, and for interactivity, we use JavaScript.
+                    Every website you visit is built with HTML as its foundation.
+                    It's the first step in web development and easy to start learning!
+                    
+                    
+                </p>
+
+                <li>CSS</li>
+                <p>CSS is used to style and design web pages made with HTML.
+                    It controls the layout, colors, fonts, spacing, and overall visual look of a page.
+                    You can apply styles directly with inline CSS, internally within a style tag, or externally via a CSS file.
+                    Common properties include color, background, margin, padding, and font-size.
+                    CSS makes websites responsive and visually appealing on all devices.
+                    With Flexbox and Grid, layout design becomes more flexible and powerful.
+                    It's a must-have skill for every front-end developer.
+                    
+                </p>
+
+                <li>Python</li>
+                <p>Python is a high-level, beginner-friendly programming language known for its simplicity.
+                    It uses clean and readable syntax, which makes it great for beginners and professionals alike.
+                    Python is used in web development, data science, automation, machine learning, and more.
+                    It supports multiple programming paradigms like procedural, object-oriented, and functional.
+                    Popular frameworks include Django for web apps and Pandas for data analysis.
+                    With huge community support and tons of libraries, Python is very versatile.
+                    It's one of the most in-demand languages in today's tech world.</p>
+            </ol>
+        </div>
+        <div class="footer">
+            <p>This is footer </p>
+        </div>
+
+</body>
+
+</html>
